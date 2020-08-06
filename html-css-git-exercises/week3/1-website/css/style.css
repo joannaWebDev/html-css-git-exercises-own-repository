@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+@media (min-width:768px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (min-width:992px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1290px;
+    overflow-x: hidden;
+    line-height: 1;
+    font-weight: 300;
+    margin: 0 auto;
+    -webkit-font-snoothing:antialised;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+}
+
+header,footer {
+    margin:0 auto;
+}
+
+header {
+ text-transform: uppercase;
+}
+
+header a:first-of-type {
+    text-decoration: none;
+}
+
+a.logo {
+    font-size: 2rem;
+    background-size: 400%;
+    background: radial-gradient(circle, #F48FB1 0%, #CE93D8 20%, #B2EBF2 40%, #A5D647 60%, #B39DDB 100%);
+    background: -webkit-radial-gradient(circle, #F48FB1 0%, #CE93D8 20%, #B2EBF2 40%, #A5D647 60%, #B39DDB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 10s linear infinite alternate;
+    -moz-animation: gradient 10s linear infinite alternate;
+    -webkit-animation: gradient 10s linear infinite alternate;
+}
+    
+@keyframes gradient {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 300px 0px;
+    }
+}
+
+.btn-outline-danger, .btn-primary {
+    background-size: 300% 300%;
+    color: hotpink;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: transparent;
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+    transition: 0.5s;
+}
+
+.btn-outline-danger:hover, .btn-primary:hover {
+    color: hotpink;
+    background-position: right center;
+}
+
+/*codepen:colt steel*/
+#btn {
+    color: hotpink;
+    background-image: repeating-linear-gradient(-45deg, 
+      #7BDFF2 10px 30px,
+      #B2F7EF 30px 50px,
+      #EFF7F6 50px 70px,
+      #F7D6E0 70px 90px,
+      #F2B5D4 90px 110px
+  );
+}
+
+#btn:hover {
+    background-position: 20% center;
+}
+
+.float-right {
+    text-align: right;
+}
+
+header nav {
+    justify-content: space-between;
+}
+
+header nav a.nav-link {
+    padding-left: 0!important;
+}
+
+main, section {
+    margin: 1.5rem auto;
+}
+
+/*cancell bootstrap margins*/
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-lg-7, .col-xs-12{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+@media only screen and (max-width:767.99px) {
+    .jumbotron {margin-bottom:5%;}
+}
+
+.jumbotron div h1{
+    font-weight: 700;
+}
+
+.responsive {
+    width: 8em;
+    height: 4em;
+}
+.btn-outline-secondary {
+    border-color:#2cc1c0 ;
+}
+
+.carousel-indicators li {
+    background-color:#D9AFD9;
+}
+
+footer, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active>.nav-link {
+    color:#2cc1c0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .active>.nav-link:hover {
+     color: #D9AFD9;
+}
+
+footer ul li a:hover {
+    color: #D9AFD9;
+    text-decoration: none;
+    border-radius: 10%;
+    border: transparent;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+}
+
+p.float-right a {
+    color: hotpink;
+    text-decoration: none;
+}
+/*contact-us.html*/
+#contact {
+    margin: 5rem auto;
+}
+
+form{
+    margin: 0 3%;
+    padding: 0 2%;
+    background-color: #FFFAF3;
+    border-radius: 0.62em;
+}
+
+form::after, form::before {
+    content: '';
+    height: 0.5em;
+    display: block;
+    background-image: repeating-linear-gradient(135deg, #F29B91 0px, #F09290 15px, transparent 15px, transparent 25px, #83B3DB 25px, #84ADCB 40px, transparent 40px, transparent 50px);
+}
+
+legend {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5% 0;
+    color: #D9AFD9;
+}
+
+button[type=submit] {
+    margin: 2% 0;
+}

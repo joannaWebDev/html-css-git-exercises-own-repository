@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+html{
+    font-size: 12px;
+}
+@media (min-width:768px){
+    html{
+        font-size: 14px;
+    }
+}
+@media (min-width:992px){
+    html {
+        font-size: 16px;
+    }
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 1290px;
+    overflow-x: hidden;   
+    padding: 0 2%;
+    width: 100%;  
+    background-color: hsla(0, 100%, 90%, 0.3);
+    line-height: 1.5;
+}
+
+h1, h2 , h3{
+    font-weight: 700;
+    padding-bottom: 2%;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+header, footer {
+    background: linear-gradient(90deg, #66a3ff 1px, transparent 1%) center, linear-gradient(#161122 24px, transparent 1%) center, #a799cc;
+    background-size: 22px 22px;
+    padding: 2% 0;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+article p {
+    font-size: 1em;
+    padding: 1% 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+main {
+    width: 100%;
+}
+
+main, footer, section{
+    padding: 5% 0;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: 300;
+}
+
+
+main section:first-of-type {
+    width: 100%;
+}
+
+main section:nth-of-type(2) {
+    visibility: hidden;
+}
+
+@media (min-width:992px){
+  main section:first-of-type{
+    width: 48vw;
+    float: left;
+
+}
+
+main section:nth-of-type(2){
+    width: 21vw;
+    float: right;
+    visibility: visible;
+    margin-left: 2%;
+    margin-top: 4%;
+    }
+}
+
+ article, aside {
+    padding: 5% 0;
+}
+
+section article:first-child, section article:nth-child(2) {
+ border-bottom: 1px solid hotpink;
+}
+
+aside {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    padding: 1%;
+}
+

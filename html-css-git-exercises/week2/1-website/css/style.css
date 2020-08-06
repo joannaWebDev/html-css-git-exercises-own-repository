@@ -1,0 +1,225 @@
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ /*reset*/
+
+html {
+    font-size: 12px;
+}
+
+@media (min-width:768px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (min-width:992px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    max-width: 1290px;
+    margin: 0 auto;
+    /*background-color: LightGray;*/
+    overflow-x: hidden;
+    line-height: 1;
+    font-weight: 300;
+}
+
+nav, section, footer {
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;   
+}
+
+nav {
+    padding:0 2%;
+    border-bottom: 1px solid #DDD;
+    margin: 1% auto 0;
+}
+
+
+nav ul li a {
+    color: #838994;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+a.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+}
+
+.logo {
+      margin-right: 10%;
+}
+
+.menu span {
+    display: none;
+}
+
+.nav a:hover i{
+    display: none;
+}
+
+nav a:hover span {
+    display: block;
+}
+
+
+@media(min-width:768px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+    i.display {
+    display: none;
+    }
+    .menu span {
+       display: block;
+    }
+    
+}
+/**/
+section.introduction {
+    background-image: url("../img/first-background.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    overflow: hidden;
+}
+
+.introduction div {
+    padding: 20% 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    /*min-width: 37.5rem;*/
+}
+
+.introduction div p {
+    padding-bottom: 4%;
+}
+
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: tomato;
+}
+
+/**/
+section.cases {
+    overflow: hidden;
+    padding-bottom: 5rem;
+    color: black;
+}
+
+section.cases div {
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    color: #1d1e21;
+    padding: 2% 0;
+}
+
+ul.devices {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ padding-top: 3%;
+}
+
+ul.devices li {
+    align-self: center;
+}
+
+.responsive {
+    width: 8em;
+    height: 4em;
+} 
+figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+footer {
+    padding:5% auto;
+    overflow: auto;
+    text-align: center;
+}
+
+h5 {
+    margin: 2% auto;
+}
+
+ul.rrss {
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+ul.rrss li {
+    margin-right: 2%;
+    border-radius: 1.5rem;
+    border: 1px solid #eaebec;
+    padding: 1%;
+    display: inline-block;
+}
+
+.twitter {
+    color:#55acee;
+}
+
+.facebook {
+    color: #4c66a4;
+}
+
+.instagram {
+    color: #3f729b;
+}
+
+p.copy{
+    margin-bottom: 5%;
+    color:#838994;
+    font-size: 0.8rem;
+}
+
